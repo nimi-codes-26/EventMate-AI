@@ -1,0 +1,28 @@
+/* Append to index.css safely utilizing write_to_file abstraction since we are just adding rules globally */
+
+/* Custom Scrollbars for the Dual-Pane Chat Layout */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.thread-item-hover:hover {
+    background: rgba(255,255,255,0.05) !important;
+}
+
+@media (max-width: 768px) {
+    .chat-history-panel {
+        width: 100% !important;
+        flex: none !important;
+        height: 250px !important;
+    }
+}

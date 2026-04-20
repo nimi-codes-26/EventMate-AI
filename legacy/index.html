@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventMate | TechFest 2026 AI Assistant</title>
+    <meta name="description"
+        content="EventMate is your AI assistant for TechFest 2026. Get schedule details, navigation help, and event insights instantly.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar context info -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>EventMate<span>AI</span></h1>
+            </div>
+            <div class="event-details">
+                <h2>Event Hubs</h2>
+                <ul>
+                    <li><span class="dot hall-a"></span> Hall A (AI Talks)</li>
+                    <li><span class="dot hall-b"></span> Hall B (Web Dev)</li>
+                    <li><span class="dot hall-c"></span> Hall C (Workshops)</li>
+                    <li><span class="dot food"></span> Food Court</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Chat UI -->
+        <main class="chat-container">
+            <header class="chat-header">
+                <div>
+                    <h2>TechFest 2026</h2>
+                    <p class="status"><span class="pulse"></span> Online • Ready to help</p>
+                </div>
+                <button class="clear-chat-btn" id="clearChatBtn" title="Clear Chat">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="3 6 5 6 21 6"></polyline>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                </button>
+            </header>
+
+            <div class="chat-messages" id="chatMessages">
+                <!-- Empty State UI -->
+                <div class="empty-state" id="emptyState">
+                    <div class="empty-icon">✨</div>
+                    <h3>Welcome to TechFest 2026</h3>
+                    <p>I'm EventMate, your personal AI guide. Ask me anything about the event schedule, or let me guide
+                        you to your next session.</p>
+                    <div class="empty-options">
+                        <button class="empty-btn" data-action="What's next?">
+                            <span class="emoji">📅</span>
+                            <div class="text-group">
+                                <strong>View Schedule</strong>
+                                <span>See upcoming sessions</span>
+                            </div>
+                        </button>
+                        <button class="empty-btn" data-action="Find a Route">
+                            <span class="emoji">🗺️</span>
+                            <div class="text-group">
+                                <strong>Find a Route</strong>
+                                <span>Navigate the venue</span>
+                            </div>
+                        </button>
+                        <button class="empty-btn" data-action="I want to attend a session">
+                            <span class="emoji">🎟️</span>
+                            <div class="text-group">
+                                <strong>Book Session</strong>
+                                <span>Save your spot</span>
+                            </div>
+                        </button>
+                        <button class="empty-btn" data-action="Where is the Food Court?">
+                            <span class="emoji">🍔</span>
+                            <div class="text-group">
+                                <strong>Food Court</strong>
+                                <span>Grab a quick bite</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- Messages will be injected here -->
+            </div>
+
+            <div class="chat-input-wrapper">
+                <form id="chatForm" class="chat-input-form">
+                    <input type="text" id="userInput" placeholder="Ask about schedules, navigation..."
+                        autocomplete="off">
+                    <button type="submit" id="sendBtn" aria-label="Send message">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
