@@ -102,6 +102,9 @@ temp/
 *.sln
 *.sw?
 
+# Local Node.js installation
+.node/
+
 # Python virtual environment
 .venv/
 venv/
