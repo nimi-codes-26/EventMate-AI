@@ -213,8 +213,7 @@ npm run build
 ---
 
 ## 👤 Author
-
-* Your Name
+Nimisha Sonare 
 
 ---
 
