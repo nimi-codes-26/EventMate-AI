@@ -149,7 +149,7 @@ EventMate AI follows a modular client-server architecture:
 
 ---
 
-## ⚡ Design Focus
+##  Design Focus
 
 * Clean, premium UI (glassmorphism-inspired)
 * Mobile-first responsive design
@@ -158,7 +158,7 @@ EventMate AI follows a modular client-server architecture:
 
 ---
 
-## 📌 Assumptions
+##  Assumptions
 
 * Users have stable internet connectivity
 * Google services (Auth, Gemini) are available and properly configured
@@ -167,7 +167,7 @@ EventMate AI follows a modular client-server architecture:
 
 ---
 
-## ⚠️ Important Notes
+##  Important Notes
 
 * Sensitive data (API keys, tokens) are excluded via `.gitignore`
 * Repository follows a clean and maintainable structure
@@ -175,7 +175,7 @@ EventMate AI follows a modular client-server architecture:
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### AI Chat Issues
 
@@ -223,7 +223,7 @@ This project is licensed under the MIT License.
 
 ---
 
-## 🤝 Submission Context
+##  Submission Context
 
 This project was built as part of **Prompt Wars Virtual** by @hack2skill, focusing on:
 
@@ -233,7 +233,7 @@ This project was built as part of **Prompt Wars Virtual** by @hack2skill, focusi
 * Effective use of Google services
 
 ---
-## 📝 Final Note
+##  Final Note
 
 EventMate AI was built with a focus on solving real-world event planning challenges using AI.
 
