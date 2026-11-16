@@ -1,4 +1,4 @@
-# 🚀 EventMate AI 
+#  EventMate AI 
 
 ## Overview
 
@@ -15,7 +15,7 @@ It combines AI-driven recommendations, real-time data, and a clean interface to 
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 - 🧠 **AI-Powered Scheduling**  
   Automatically builds conflict-free schedules based on user preferences  
@@ -109,11 +109,6 @@ npm run dev:server
 
 # Start frontend (new terminal)
 npm run dev
-```
-
-App runs at:
-👉 [http://localhost:5173](http://localhost:5173)
-
 ---
 
 ### Production Build
